@@ -7,6 +7,7 @@ import { ProductList } from '@/components/sections/ProductList';
 import { Testimonials } from '@/components/sections/Testimonials';
 import { Contact } from '@/components/sections/Contact';
 import { SITE_CONFIG } from '@/data/content';
+import { Intro } from '@/components/sections/Intro';
 
 export default function Home() {
   // JSON-LD Structured Data
@@ -47,8 +48,9 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Hero />
-      <Stats />
+      <Intro />
       <About />
+      <Stats />
       <WhyChooseUs />
       <CtaBanner />
       <ProductList />

@@ -49,7 +49,13 @@ export const Contact = () => {
                 </h3>
                 <p className='text-primary-100'>{SITE_CONFIG.address}</p>
                 <div className='mt-8 p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 inline-block'>
-                  <p className='text-white font-medium'>Hubungi Kami!</p>
+                  <Button
+                    href={`https://wa.me/${SITE_CONFIG.whatsapp}`}
+                    variant='whatsapp'
+                    size='lg'
+                    className='gap-2'>
+                    Hubungi Kami
+                  </Button>
                 </div>
               </div>
             </div>
