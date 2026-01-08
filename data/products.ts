@@ -231,31 +231,7 @@ priceList: [
       }
     ]
   },
-    {
-    id: "gas-lpg",
-    name: "Gas LPG",
-    category: "Gas",
-    description: "Gas LPG 3 kg, 5.5 kg, dan 12 kg untuk agen dan pangkalan.",
-    image: "/images/products/gas.png",
-    rating: 5,
-    priceList: [
-      {
-        groupName: "Tabung Gas 3KG",
-        items: [
-          { name: "12 Biji", price: "Rp 1.000.000" },
-          { name: "50 Biji", price: "Rp 4.000.000" },
-          { name: "100 Biji", price: "Rp 8.000.000" },
-        ]
-      },
-      {
-        groupName: "Tabung Gas 12KG",
-        items: [
-          { name: "5 Biji", price: "Rp 1.000.000" },
-          { name: "11 Biji", price: "Rp 2.000.000" },
-        ]
-      }
-    ]
-  },
+
   {
     id: "kopi-sachet",
     name: "Kopi Sachet",
