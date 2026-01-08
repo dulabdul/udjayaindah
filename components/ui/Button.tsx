@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
@@ -7,6 +8,9 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline' | 'whatsapp';
   size?: 'sm' | 'md' | 'lg';
   fullWidth?: boolean;
+  // FIX: Tambahkan properti target dan rel secara eksplisit
+  target?: React.HTMLAttributeAnchorTarget;
+  rel?: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -49,7 +53,7 @@ export const Button: React.FC<ButtonProps> = ({
       <Link
         href={href}
         className={classes}
-        aria-label={props['aria-label']}>
+        {...(props as any)}>
         {children}
       </Link>
     );
