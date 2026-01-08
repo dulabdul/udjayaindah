@@ -1,26 +1,40 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Setup Font dari Next.js (variable di layout.tsx) */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Setup Warna Utama & Branding */
+  --color-primary: #93B532;
+  --color-primary-dark: #7a9629; /* Varian gelap untuk hover */
+  --color-secondary: #0F2F02;
+  
+  /* Setup Warna Background & Text Global */
+  --color-background: #F9FAFB;
+  --color-foreground: #1F2937;
+  --color-muted: #6B7280;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Global Reset / Base Styles */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  -webkit-font-smoothing: antialiased;
 }
+
+/* Custom Utilities (V4 Syntax uses @utility) */
+@utility container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Catatan:
+  Dengan setup @theme di atas, class berikut otomatis tersedia tanpa config JS:
+  - bg-primary, text-primary, border-primary
+  - bg-secondary, text-secondary
+  - bg-primary-dark (untuk hover state)
+*/
