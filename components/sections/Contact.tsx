@@ -49,8 +49,7 @@ export const Contact = () => {
                 </h3>
                 <p className='text-primary-100'>{SITE_CONFIG.address}</p>
                 <div className='mt-8 p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 inline-block'>
-                  <p className='text-white font-medium'>Buka Setiap Hari</p>
-                  <p className='text-primary text-sm'>08:00 - 17:00 WIB</p>
+                  <p className='text-white font-medium'>Hubungi Kami!</p>
                 </div>
               </div>
             </div>

@@ -50,13 +50,6 @@ export const Footer = () => {
           <div className='space-y-4'>
             <h4 className='text-lg font-bold text-[#93B532]'>Hubungi Kami</h4>
             <ul className='space-y-4'>
-              <li className='flex items-start gap-3 text-gray-300'>
-                <MapPin
-                  className='shrink-0 text-[#93B532]'
-                  size={20}
-                />
-                <span>{SITE_CONFIG.address}</span>
-              </li>
               <li>
                 <a
                   href={`https://wa.me/${SITE_CONFIG.whatsapp}`}
