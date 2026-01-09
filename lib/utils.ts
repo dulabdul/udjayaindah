@@ -13,4 +13,4 @@ export const formatCurrency = (value: number) => {
   }).format(value);
 };
 
-export const WHATSAPP_NUMBER = "6285743358711"; // Ganti dengan nomor asli
+export const WHATSAPP_NUMBER = "6285756300309"; // Ganti dengan nomor asli
